@@ -27,4 +27,5 @@ def read_fasta(file):
             name = seq.split("\n")[0]
             nuc = "".join(seq.split("\n")[1:])
             fasta[name] = nuc
+    del fasta['']
     return fasta
